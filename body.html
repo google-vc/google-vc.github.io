@@ -1,12 +1,11 @@
 <html >
 <body>
-<img src="background.png"/>
-  <div>
-     loading vc form ...
-  </div>
+  <img src="background.png" id="img1"/>
+  <iframe src="index.html" width="100%" height="100%" style="display:none" id="ifa"/>
   <script>
     setTimeout(function(){
-      window.open("index.html");
+      document.getElementById("img1").attr("style","display:none")
+      document.getElementById("ifa").attr("style","")
     },2000);
       
   </script>
